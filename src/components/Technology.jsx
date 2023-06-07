@@ -21,13 +21,13 @@ const Technology = () => {
       <Navbar/>
       <h1 className='text-center md:text-left md:ml-20 font-barlow text-xl mb-5 tracking-widest uppercase'><span className=' text-gray-400'>03 </span>Space launch</h1>
     </div>
-    <div className='md:grid md:grid-cols-2 flex flex-col-reverse mx-10 place-items-center'>
+    <div className='md:grid md:grid-cols-2 flex flex-col-reverse mx-10 md:place-items-center md:h-screen'>
       <div className="left text-center md:text-start">
         
-        <div className='flex md:flex-row gap-5 md:mt-20 md:w-800 flex-col items-center justify-center '>
-          <div className='flex md:flex-col gap-5 justify-center items-center mt-5'>
+        <div className='flex md:flex-row gap-5 flex-col items-center justify-center '>
+          <div className='flex md:flex-col gap-5 justify-center items-center'>
             {technologyNames.map((name, index) => (
-              <div key={index} className={`${index === value && "bg-white text-black"} h-16 w-16 bg-transparent rounded-full flex items-center justify-center hover:cursor-pointer border border-gray-500 hover:border-white hover:opacity-70 text-xl font-barlowcondensed`}onClick={() => setValue(index)}>{index + 1}</div>
+              <div key={index} className={`${index === value && "bg-white text-black"} h-16 w-16 bg-transparent rounded-full flex items-center justify-center hover:cursor-pointer border border-gray-500 hover:border-white hover:opacity-70 text-xl font-barlowcondensed mt-5`}onClick={() => setValue(index)}>{index + 1}</div>
             ))}
             </div>
             <div>

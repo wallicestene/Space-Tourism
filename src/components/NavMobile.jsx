@@ -8,7 +8,7 @@ const NavMobile = ({setShowMobileNav, showmobileNav}) => {
     <nav className='md:hidden fixed right-0 z-40 backdrop-blur-xl bg-black/30 h-full w-1/2 top-0'>
       <div>
         <div className='flex items-center justify-end mr-5 mt-8'>
-          <Close onClick={() => setShowMobileNav(!showmobileNav)}/>
+          <Close onClick={() => setShowMobileNav(!showmobileNav)} fontSize='large'/>
         </div>
         <ul className='flex flex-col items-center gap-8'>
           <li className='list'>

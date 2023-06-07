@@ -17,10 +17,10 @@ function Destination() {
         <Navbar/>
         <h1 className='text-center md:text-left md:ml-20 font-barlow text-xl tracking-widest uppercase'><span className=' text-gray-400'>01 </span>Pick Your Destination</h1>
       </div>
-      <div className='grid md:grid-cols-2 grid-rows-1 gap-7 mt-10 mx-10'>
+      <div className='grid md:grid-cols-2 grid-rows-1 gap-7  mx-10 place-items-center h-screen'>
       <div className='left grid place-items-center'>
         {/* Display the selected destination image */}
-        <img src={selectedDestination.images.webp} alt={selectedDestination.name} className=' md:w-96 object-contain w-4/5 animate-spin-slow'/>
+        <img src={selectedDestination.images.webp} alt={selectedDestination.name} className=' md:w-4/5 object-contain w-4/5 animate-spin-slow'/>
       </div>
       <div className='right md:w-4/5'>
         {/* Display the selected destination information */}
@@ -39,11 +39,11 @@ function Destination() {
         <div className='flex items-center md:justify-between px-5 justify-between flex-wrap gap-6'> 
           <div >
             <h2 className=' font-barlow text-gray-400'>AVG. DISTANCE</h2>
-            <p className=' font-bellefair text-3xl'>{selectedDestination.distance}</p>
+            <p className=' font-bellefair md:text-3xl text-2xl'>{selectedDestination.distance}</p>
           </div>
           <div>
             <h2 className=' font-barlow text-gray-400'>EST. TRAVEL TIME</h2>
-            <p className=' font-bellefair text-3xl'>{selectedDestination.travel}</p>
+            <p className=' font-bellefair md:text-3xl text-2xl'>{selectedDestination.travel}</p>
           </div>
         </div>
       </div>
