@@ -1,0 +1,26 @@
+import React from 'react'
+import Navbar from './Navbar'
+
+const Home = () => {
+  return (
+    <div className='md:bg-[url(/assets/home/background-home-desktop.jpg)] bg-[url(/assets/home/background-home-tablet.jpg)] bg-cover h-screen text-white relative overflow-scroll'>
+      <div className='mt-5'>
+        <Navbar />
+      </div>
+      <div className="home-content grid  gap-10 md:gap-30 grid-rows-2 md:grid-cols-2 absolute top-1/3 md:left-10 left-2 text-center md:text-start right-2">
+        <div className="left md:w-4/5">
+          <h1 className=' font-barlow-400 md:text-xl mb-5'>So You Want To Travel To</h1>
+          <h1 className=' font-barlowcondensed text-9xl md:text-9xl mb-5'>SPACE</h1>
+          <p className='font-barlow-400 text-base'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+        </div>
+        <div className="right grid place-items-center">
+          <div className='bg-slate-50 text-xl font-semibold h-48 w-48 rounded-full grid place-items-center text-black font-bellefair uppercase hover:ring hover:ring-offset-60 ring-opacity-70 ring-offset-transparent cursor-pointer'>
+          Explore
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Home
