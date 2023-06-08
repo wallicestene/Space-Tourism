@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import data from '../data.json';
+
 const Crew = () => {
 
   const [value, setValue] = useState(0)
@@ -19,7 +20,7 @@ const Crew = () => {
     <div className="left text-center md:text-start md:w-800 flex md:flex-col flex-col-reverse h-fit p-4 flex-wrap">
       <div className=' h-52 md:w-800'>
         <h1 className=' font-barlowcondensed tracking-widest mb-5 text-gray-400 text-xl'>{selectedCrew.role.toUpperCase()}</h1>
-      <h2 className=' font-bellefair tracking-widest text-4xl mb-5'>{selectedCrew.name.toUpperCase()}</h2>
+      <h2 className='font-bellefair tracking-widest text-4xl mb-5'>{selectedCrew.name.toUpperCase()}</h2>
       <p className=' font-barlow text-base text-gray-400 tracking-wide'>{selectedCrew.bio}</p>
       </div>
       <div className='flex gap-2 items-center justify-center md:justify-start mb-5 md:mt-16'>
