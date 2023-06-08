@@ -5,9 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.hr{
-  width: 38%;
-}
 .list{
   @apply p-3 
 }

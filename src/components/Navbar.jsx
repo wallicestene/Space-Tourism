@@ -13,14 +13,14 @@ const Navbar = () => {
     <nav className='flex items-center justify-between h-20  ml-7 '>
       <div className="nav-logo flex items-center justify-between">
         <img src={logo} alt="logo" />
-        <hr className='hr md:absolute z-40 left-24 top-18 border border-gray-500'/>
-        <div className='absolute right-6 md:hidden'>
+        <hr className=' lg:w-2/6 md:absolute z-40 left-32 top-18 border border-gray-500'/>
+        <div className='absolute right-6 lg:hidden'>
           <MenuIcon onClick={() => setShowMobileNav(!showmobileNav)}/>
         </div>
       </div>
       <div className="nav-links mr-0">
-        <ul className=' hidden backdrop-blur-xl bg-black/30 md:flex gap-10 items-center h-20 font-barlow text-xl w-full'>
-          <li className='hover:border-b-2 p-5'>
+        <ul className=' hidden md:hidden backdrop-blur-xl bg-black/30 lg:flex gap-10 items-center h-20 font-barlow text-xl w-full p-5'>
+          <li className='hover:border-b-2 p-2'>
             <Link to="/">
             <NavbarOptions title="Home" index="00"/>
             </Link>

@@ -27,7 +27,7 @@ export default {
         "spin-slow" : "spin 60s linear infinite",
       },
       width:{
-        "800" : "600px",
+        "800" : "450px",
       }
     },
   },

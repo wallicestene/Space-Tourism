@@ -15,9 +15,9 @@ const Crew = () => {
       <Navbar/>
       <h1 className='text-center md:text-left md:ml-20 font-barlow text-xl tracking-widest uppercase mb-5'><span className=' text-gray-400'>02 </span>MEET YOUR CREW</h1>
     </div>
-    <div className='md:grid md:grid-cols-2 flex flex-col-reverse gap-7 md:place-items-center md:h-screen'>
-    <div className="left text-center md:text-start md:w-800 flex md:flex-col flex-col-reverse h-fit md:ml-20 p-5">
-      <div className=' h-52'>
+    <div className='md:grid md:grid-cols-2 flex flex-col-reverse gap-7 md:place-items-center md:h-screen md:mx-10'>
+    <div className="left text-center md:text-start md:w-800 flex md:flex-col flex-col-reverse h-fit p-4 flex-wrap">
+      <div className=' h-52 md:w-800'>
         <h1 className=' font-barlowcondensed tracking-widest mb-5 text-gray-400 text-xl'>{selectedCrew.role.toUpperCase()}</h1>
       <h2 className=' font-bellefair tracking-widest text-4xl mb-5'>{selectedCrew.name.toUpperCase()}</h2>
       <p className=' font-barlow text-base text-gray-400 tracking-wide'>{selectedCrew.bio}</p>
